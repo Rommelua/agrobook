@@ -18,7 +18,15 @@ public class Book {
 	private String bookname;
 	@Column
 	private Date dateofbook;
-	
+
+	public Book() {
+	}
+
+	public Book(String bookname, Date dateofbook) {
+		this.bookname = bookname;
+		this.dateofbook = dateofbook;
+	}
+
 	public int getId() {
 		return id;
 	}
