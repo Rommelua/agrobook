@@ -21,7 +21,11 @@ public class BaseController {
 		((AbstractApplicationContext) ctx).close();
 	}
 	
-    public List<Book> getListOfBooks(){
+    public List<Book> getListOfBooks() {
     	return shelterService.getListOfBooks();
     }
+
+	public void saveBook(Book book) {
+		shelterService.saveBook(book);
+	}
 }

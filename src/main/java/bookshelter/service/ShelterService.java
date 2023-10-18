@@ -20,5 +20,9 @@ public class ShelterService {
 	public List<Book> getListOfBooks(){
 		return dao.getListOfBooks();
 	}
+
+	public Book saveBook(Book book){
+		return dao.saveBook(book);
+	}
 	
 }
